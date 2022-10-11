@@ -2,8 +2,10 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
-const DB_URL = "mongodb+srv://person1:person1@person1.uodeo.mongodb.net/registration?retryWrites=true&w=majority"
 const path = require('path')
+const DB_URL = process.env.DB
+const dotenv = require('dotenv')
+dotenv.config()
 
 
 
